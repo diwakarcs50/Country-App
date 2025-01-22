@@ -25,8 +25,8 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} >
          <Route path="/" element={<Home/>} />
-         <Route path="contact" element={<div>Contact</div>}/>
-         <Route path="country" element={<CountryDetails/>}/>
+         <Route path="/contact" element={<div>Contact</div>}/>
+         <Route path="/:country" element={<CountryDetails/>}/>
       </Route>
 
     </Routes>
