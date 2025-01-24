@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router";
 
-export default function CountryCard({name,flag,population,region,capital}) {
+export default function CountryCard({name,flag,population,region,capital,data}) {
     console.log(typeof population)
   return (
     <>
-      <Link className="country-card" to={`/country?name=${name}`}>
+      <Link className="country-card" to={`/${name}`} state={data}>
         <img src={flag} alt="South Georgia flag" />
         <div className="card-text">
           <h3 className="card-title">{name}</h3>

@@ -12,13 +12,19 @@ body {
   font-family: Nunito, sans-serif;
 }
 
-body.dark {
+main, header {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+main.dark, header.dark {
   --background-color: #202c37;
   --text-color: white;
   --elements-color: #2b3945;
 }
 
 main {
+  min-height: calc(100vh - 73px);
   padding: 24px;
 }
 
@@ -154,6 +160,12 @@ a {
   .search-filter-container {
     flex-direction: column;
   }
+}
+
+.shimmer-card {
+  background-color: #ccc;
+  flex-direction: row;
+  height: 350px;
 }
 
 .country-details-container {
